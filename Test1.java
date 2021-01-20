@@ -2,15 +2,15 @@ package duoxiancheng.lianxi;
 
 public class Test1 {
     public static void main(String[] args) {
-//        MyThread myThread=new MyThread();
-//        MyThread myThread2=new MyThread();
-//        myThread.start();
-//        myThread2.start();
-        Runnable runnable=new MyThread2();
-        Thread thread=new Thread(runnable,"111");
-        Thread thread2=new Thread(runnable);
-        thread.start();
-        thread2.start();
+        MyThread myThread=new MyThread();
+        MyThread myThread2=new MyThread();
+        myThread.start();
+        myThread2.start();
+//        Runnable runnable=new MyThread2();
+//        Thread thread=new Thread(runnable,"111");
+//        Thread thread2=new Thread(runnable);
+//        thread.start();
+//       thread2.start();
     }
 }
 class MyThread extends Thread{
